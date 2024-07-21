@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction page</title>
+    <style>
+   body {
+    background-color: beige;
+    font-family: "Playwrite BE VLG", cursive;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #0A6847;
+    font-size: 4rem;
+    margin: 0.5em 0;
+   
+}
+
+h2 {
+    color: #E65C19;
+    font-size: 3rem;
+    margin: 0.5em 0;
+}
+h3{
+    color: #0A6847;
+    font-size: 3rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px; /* Space between images */
+    width: 90%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 20px 0; /* Space above and below the grid */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-size: x-large;
+    font-weight: 900;
+    color: #6C0345;
+    margin-bottom: 10px; /* Space between label and image */
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image img {
+    width: 100%;
+    height: auto; /* Ensure images fit their containers */
+    object-fit: cover; /* Ensure images cover their grid cells */
+    border: 3px solid black; /* Optional: border to define image edges */
+}
+
+.abt{
+    background-color: black;
+    height: 100px;
+    width: 50px;
+}
+.para{
+    font-size: xx-large;
+}
+div > img{
+    float:left;
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Here are some paintings inspired by</h1>
+    <h1>Piet Mondrian</h1>
+    <h2>Created using HTML and CSS</h2>
+    
+    <div class="container">
+        <div class="item">
+            <div class="label">Painting 1</div>
+            <a href="paint1.html" class="image"><img src="./assets/p1.png" alt="Painting 1"></a>
+        </div>
+        <div class="item">
+            <div class="label">Painting 2</div>
+            <a href="paint2.html" class="image"><img src="./assets/p2.png" alt="Painting 2"></a>
+        </div>
+        <div class="item">
+            <div class="label">Painting 3</div>
+            <a href="paint3.html" class="image"><img src="./assets/p3.png" alt="Painting 3"></a>
+        </div>
+    </div>
+    <div>
+        <h3>About Piet Mondrian</h3>
+        <img src="./assets/piet.png">
+        <p class="para">Piet Mondrian (1872-1944) was a Dutch painter known for his abstract, geometric works and contributions to the development of modern art.
+            He is celebrated for his pivotal role in the 'De Stijl' movement, which emphasized geometric abstraction and simplicity. His work is 
+            distinguished by a grid of vertical and horizontal lines and a palette dominated by primary colors—red, blue, yellow—alongside black, white, 
+            and gray. Initially influenced by Impressionism and Cubism, Mondrian's mature style evolved into a strict geometric abstraction, most famously
+             represented in his "Composition" series. His innovative approach has profoundly influenced design, architecture, and fashion. Mondrian's art was also shaped by his interest in 
+             Theosophy, reflecting a quest for universal harmony. His legacy endures, significantly impacting modern art and design.
+        </p>
+
+    </div>
+</body>
+<footer>By Sharanya A Nithyanandh</footer>
+</html>

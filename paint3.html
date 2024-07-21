@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painting 3</title>
+    <style>
+        body {
+            background-color: beige;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            font-size: 5rem;
+            font-family: "Playwrite BE VLG", cursive;
+            margin-bottom: 30px;
+           
+        }
+        .container {
+            border: 3px solid black;
+            background-color: black;
+            display: grid;
+            gap: 8px;
+            grid-template-columns: 290px 290px 100px 95px;
+            grid-template-rows: 290px 290px 100px 95px;
+            width: 800px;
+            height: 800px;
+            margin: auto;
+        }
+        .white {
+            background-color: #F0F1EC;
+        }
+        .red {
+            background-color: #E72F24;
+        }
+        .yellow {
+            background-color: #F9D01E;
+        }
+        .blue {
+            background-color: #004592;
+        }
+        .spec1 {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+        .spec2 {
+            grid-row: span 2;
+        }
+        .spec3 {
+            grid-column: span 2;
+        }
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+        <h1>Here is the third painting!</h1>
+        <div class="container">
+            <div class="white"></div>
+            <div class="red spec1"></div>
+            <div class="white"></div>
+            <div class="blue spec2"></div>
+            <div class="white spec2"></div>
+            <div class="yellow spec3"></div>
+        </div>
+    </div>
+  </body>
+</html>

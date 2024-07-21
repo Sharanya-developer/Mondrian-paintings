@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+  
+   
+    body{
+        background-color: beige;
+        margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            place-items: center;
+    }
+    h1{
+      text-align: center;
+        font-size: 5rem;
+        font-family: "Playwrite BE VLG", cursive;
+        margin: 20px ;
+    }
+    .container{
+        border: 3px solid black;
+      background-color:black ;
+      height: 748px;
+      width: 748px;
+      display: grid;
+      gap: 9px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      margin:auto;
+    }
+    .red{
+      background-color: #E72F24 ;
+    }
+    .white{
+      background-color: #F0F1EC;
+      
+      
+    }
+    .spec1{
+      grid-column: span 3;
+    }
+    .spec2{
+      grid-column: span 2;
+      
+    }
+    .yellow{
+      background-color: #F9D01E;
+
+    }
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+    .spec3{
+      grid-row: span 2;
+    }
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <h1>Here is the first painting!</h1>
+   <div class="container">
+    <div class="red"></div>
+    <div class="white spec1"></div>
+    <div class="white spec3"></div>
+    <div class="white spec2 spec3"></div>
+    
+    <div class="blue"></div>
+    <div class="white spec3"></div>
+    <div class="white"></div>
+    <div class="yellow"></div>
+    
+    <div class="black"></div>
+   </div>
+</body>
+
+</html>
